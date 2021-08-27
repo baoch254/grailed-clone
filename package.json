@@ -8,7 +8,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "upgrade:angular:patch": "npx npm-check-updates --upgrade --target 'patch' --filter '/@angular.*/'"
+    "upgrade:angular:patch": "npx npm-check-updates --upgrade --target 'patch' --filter '/@angular.*/'",
+    "upgrade:ngrx:patch": "npx npm-check-updates --upgrade --target 'patch' --filter '/@ngrx.*/'"
   },
   "private": true,
   "dependencies": {
@@ -20,8 +21,13 @@
     "@angular/platform-browser": "^12.1.5",
     "@angular/platform-browser-dynamic": "^12.1.5",
     "@angular/router": "^12.1.5",
+    "@ngrx/component": "^12.2.0",
+    "@ngrx/component-store": "^12.2.0",
+    "@ngrx/effects": "^12.2.0",
+    "@ngrx/store": "^12.2.0",
+    "@ngrx/store-devtools": "12.2.0",
     "@nrwl/angular": "12.8.0",
-    "rxjs": "~6.6.0",
+    "rxjs": "~6.6.6",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
   },

@@ -1,0 +1,14 @@
+{
+  "projectType": "library",
+  "root": "libs/api/middleware",
+  "sourceRoot": "libs/api/middleware",
+  "targets": {
+    "test": {
+      "executor": "@nx-go/nx-go:test"
+    },
+    "lint": {
+      "executor": "@nx-go/nx-go:lint"
+    }
+  },
+  "tags": ["type:util", "scope:api"]
+}
