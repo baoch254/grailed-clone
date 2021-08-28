@@ -1,14 +1,14 @@
 {
   "projectType": "library",
-  "root": "libs/web/shell/ui",
-  "sourceRoot": "libs/web/shell/ui/src",
+  "root": "libs/web/shell/ui/layout",
+  "sourceRoot": "libs/web/shell/ui/layout/src",
   "prefix": "gr",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/web/shell/ui"],
+      "outputs": ["coverage/libs/web/shell/ui/layout"],
       "options": {
-        "jestConfig": "libs/web/shell/ui/jest.config.js",
+        "jestConfig": "libs/web/shell/ui/layout/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -16,8 +16,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/web/shell/ui/src/**/*.ts",
-          "libs/web/shell/ui/src/**/*.html"
+          "libs/web/shell/ui/layout/src/**/*.ts",
+          "libs/web/shell/ui/layout/src/**/*.html"
         ]
       }
     }

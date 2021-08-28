@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'grailed-root',
-  templateUrl: './app.component.html',
+  selector: 'gr-root',
+  template: `<router-outlet></router-outlet>`,
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {

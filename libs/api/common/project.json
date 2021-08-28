@@ -10,5 +10,6 @@
       "executor": "@nx-go/nx-go:lint"
     }
   },
-  "tags": ["type:util", "scope:api"]
+  "tags": ["type:util", "scope:api"],
+  "implicitDependencies": []
 }

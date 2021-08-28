@@ -32,13 +32,14 @@
     }
   },
   "projects": {
-    "api": "apps/api",
-    "api-common": "libs/api/common",
-    "api-middleware": "libs/api/middleware",
+    "apps-api": "apps/api",
+    "libs-api-common": "libs/api/common",
+    "libs-api-middleware": "libs/api/middleware",
     "web": "apps/web",
     "web-e2e": "apps/web-e2e",
+    "web-home-feature": "libs/web/home/feature",
     "web-shell-feature": "libs/web/shell/feature",
-    "web-shell-ui": "libs/web/shell/ui"
+    "web-shell-ui-layout": "libs/web/shell/ui/layout"
   },
   "defaultProject": "web"
 }
