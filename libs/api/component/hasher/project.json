@@ -1,0 +1,13 @@
+{
+  "projectType": "library",
+  "root": "libs/api/component/hasher",
+  "sourceRoot": "libs/api/component/hasher",
+  "targets": {
+    "test": {
+      "executor": "@nx-go/nx-go:test"
+    },
+    "lint": {
+      "executor": "@nx-go/nx-go:lint"
+    }
+  }
+}

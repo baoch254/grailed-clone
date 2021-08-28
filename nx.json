@@ -3,7 +3,9 @@
   "workspaceLayout": {
     "appsDir": "apps"
   },
-  "plugins": ["./tools/project-graph-plugins/go-project-graph.js"],
+  "plugins": [
+    "./tools/project-graph-plugins/go-project-graph.js"
+  ],
   "affected": {
     "defaultBase": "main"
   },
@@ -22,7 +24,12 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
         "accessToken": "MDdiNzFmMzMtZjdhOC00OTE1LTk2YmMtNDUxYzEyODk1MDgyfHJlYWQtd3JpdGU="
       }
     }
@@ -34,5 +41,13 @@
         "projects": "dependencies"
       }
     ]
+  },
+  "projects": {
+    "api-component-hasher": {
+      "tags": [
+        "type:util",
+        "scope:api"
+      ]
+    }
   }
 }
