@@ -61,4 +61,4 @@ To set any env for database, 3rd parties, etc. Add env to [launch.json](https://
 
 ### 4.2 Go with Nx
 
-Project name of golang package such as app, lib must be added prefix 'apps' or 'libs'. Because nx-go v1.7.1 does not support dependencies graph, so I use a custom plugin ([nx-go-project-graph-plugin by FrozenPandaz](https://github.com/nrwl/nx-go-project-graph-plugin)) to make dep-graph. This way will be removed until nx-go support dep-graph.
+Because nx-go v1.7.1 does not support dependencies graph, so I use a custom plugin ([nx-go-project-graph-plugin by FrozenPandaz](https://github.com/nrwl/nx-go-project-graph-plugin)) to make dep-graph. This way will be removed until nx-go support dep-graph.

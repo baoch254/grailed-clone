@@ -63,5 +63,7 @@ function deriveNxProjectNameFromGoImportPath(
 ) {
   return `${goPackageImportPath
     .replace(`${workspaceGoModule}/`, '')
+    .replace('apps/', '')
+    .replace('libs/', '')
     .replace(/\//g, '-')}`;
 }
