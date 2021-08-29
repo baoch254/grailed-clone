@@ -1,9 +1,9 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
+import { AppConfig } from '@grailed/web/shared/app-config';
 
-export const environment = {
+export const environment: AppConfig = {
   production: false,
+  baseURL: 'https://localhost:3000',
 };
 
 /*

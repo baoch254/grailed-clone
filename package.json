@@ -8,6 +8,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
+    "lint-staged": "lint-staged",
+    "generate-icons": "svg-generator",
     "upgrade:angular:patch": "npx npm-check-updates --upgrade --target 'patch' --filter '/@angular.*/'",
     "upgrade:ngrx:patch": "npx npm-check-updates --upgrade --target 'patch' --filter '/@ngrx.*/'"
   },
@@ -21,6 +23,8 @@
     "@angular/platform-browser": "^12.1.5",
     "@angular/platform-browser-dynamic": "^12.1.5",
     "@angular/router": "^12.1.5",
+    "@ngneat/svg-icon": "^3.2.0",
+    "@ngneat/until-destroy": "^8.1.4",
     "@ngrx/component": "^12.2.0",
     "@ngrx/component-store": "^12.2.0",
     "@ngrx/effects": "^12.2.0",
@@ -41,6 +45,7 @@
     "@angular/language-service": "^12.1.5",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@ngneat/svg-generator": "^3.2.1",
     "@nrwl/cli": "12.8.0",
     "@nrwl/cypress": "12.8.0",
     "@nrwl/eslint-plugin-nx": "12.8.0",
@@ -54,6 +59,7 @@
     "@types/node": "14.14.33",
     "@typescript-eslint/eslint-plugin": "~4.28.3",
     "@typescript-eslint/parser": "~4.28.3",
+    "autoprefixer": "^10.3.3",
     "cypress": "^8.3.0",
     "eslint": "7.22.0",
     "eslint-config-prettier": "8.1.0",
@@ -62,8 +68,21 @@
     "jest": "27.0.3",
     "jest-preset-angular": "9.0.4",
     "lint-staged": "^11.1.2",
+    "postcss": "^8.3.6",
     "prettier": "^2.3.1",
+    "tailwindcss": "^2.2.8",
     "ts-jest": "27.0.3",
     "typescript": "~4.3.5"
+  },
+  "svgGenerator": {
+    "outputPath": "./libs/web/shared/ui/icon/src/lib/svg",
+    "prefix": "g",
+    "srcPath": "./libs/web/shared/ui/icon/src/lib/assets",
+    "svgoConfig": {
+      "plugins": [
+        "cleanupAttrs",
+        "removeDimensions"
+      ]
+    }
   }
 }

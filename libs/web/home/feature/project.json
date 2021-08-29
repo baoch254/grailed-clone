@@ -2,7 +2,7 @@
   "projectType": "library",
   "root": "libs/web/home/feature",
   "sourceRoot": "libs/web/home/feature/src",
-  "prefix": "gr",
+  "prefix": "grail",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
