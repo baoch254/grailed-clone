@@ -5,11 +5,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
+import { IconModule } from '@grailed/web/shared/ui/icon';
 
 @NgModule({
   imports: [
     CommonModule,
     WebLayoutModule,
+    IconModule,
     NoopAnimationsModule,
     RouterModule.forRoot(webShellRoutes, {
       scrollPositionRestoration: 'top',

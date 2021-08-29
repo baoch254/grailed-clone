@@ -9,5 +9,8 @@
     "lint": {
       "executor": "@nx-go/nx-go:lint"
     }
+  },
+  "api-component-hasher": {
+    "tags": ["type:util", "scope:api"]
   }
 }
