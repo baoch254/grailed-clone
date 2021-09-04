@@ -1,0 +1,45 @@
+:host {
+  @apply flex items-center w-full max-w-searchBox;
+  @apply border border-primary border-solid rounded;
+}
+
+.search-frame {
+  @apply w-searchBox;
+}
+
+.search-btn {
+  @apply relative text-base text-primary font-bold;
+  letter-spacing: -0.03em;
+  line-height: 1.3;
+  right: 0.4rem;
+  top: 0.4rem;
+  @apply border border-solid border-lightStroke;
+
+  &:focus,
+  &:hover {
+    @apply border-lightStroke text-primary;
+  }
+
+  &.hoverable {
+    &:hover {
+      @apply border-primary;
+    }
+  }
+}
+
+.search-label {
+  @apply h-16 flex items-center justify-center;
+  width: 4.5rem;
+}
+
+.search-suggestions {
+  @apply w-searchBox bg-white py-8 absolute;
+  top: 4.2rem;
+  left: -4.5rem;
+  @apply z-30 shadow-standard;
+
+  .search-suggestions-list > li {
+    @apply h-18 pl-8 py-4;
+    @apply hover:bg-lightStroke cursor-pointer;
+  }
+}

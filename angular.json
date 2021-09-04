@@ -42,7 +42,13 @@
     "web-shared-app-config": "libs/web/shared/app-config",
     "web-shared-ui-icon": "libs/web/shared/ui/icon",
     "web-shell-feature": "libs/web/shell/feature",
-    "web-shell-ui-layout": "libs/web/shell/ui/layout"
+    "web-shell-ui-footer": "libs/web/shell/ui/footer",
+    "web-shell-ui-header": "libs/web/shell/ui/header",
+    "web-shell-ui-layout": "libs/web/shell/ui/layout",
+    "web-shell-ui-main-view": "libs/web/shell/ui/main-view",
+    "web-shell-ui-menu": "libs/web/shell/ui/menu",
+    "web-shell-ui-navbar": "libs/web/shell/ui/navbar",
+    "web-shell-ui-search-box": "libs/web/shell/ui/search-box"
   },
   "defaultProject": "web"
 }

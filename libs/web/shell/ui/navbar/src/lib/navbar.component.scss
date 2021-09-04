@@ -1,0 +1,10 @@
+:host {
+  @apply block w-full mt-toHeaderGlobal;
+  @apply border-b border-solid border-lightStroke;
+}
+
+.navbar {
+  @apply h-navBar;
+  padding-top: 1.1rem;
+  padding-bottom: 0.8rem;
+}

@@ -1,0 +1,28 @@
+<label class="search-label" title="Search">
+  <svg-icon key="search" width="15px" height="15px"></svg-icon>
+</label>
+<div class="search-frame relative w-full h-16 flex">
+  <input
+    type="text"
+    (focus)="isHidden = false"
+    (blur)="isHidden = true"
+    placeholder="Search"
+    class="w-full h-full outline-none flex-auto"
+  />
+  <button
+    nz-button
+    class="search-btn rounded-lg {{ isHidden ? '' : 'hoverable' }}"
+  >
+    Search
+  </button>
+  <div class="search-suggestions {{ isHidden ? 'hidden' : 'block' }}">
+    <div>
+      <ul class="search-suggestions-list">
+        <li>Supreme</li>
+        <li>Jordan 1</li>
+        <li>Jordan 4</li>
+        <li>Rick Owens</li>
+      </ul>
+    </div>
+  </div>
+</div>

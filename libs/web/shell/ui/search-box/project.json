@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/web/shell/ui/search-box",
+  "sourceRoot": "libs/web/shell/ui/search-box/src",
+  "prefix": "grail",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/web/shell/ui/search-box"],
+      "options": {
+        "jestConfig": "libs/web/shell/ui/search-box/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/web/shell/ui/search-box/src/**/*.ts",
+          "libs/web/shell/ui/search-box/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["type:ui", "scope:web"]
+}

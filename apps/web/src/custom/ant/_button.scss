@@ -1,0 +1,34 @@
+.ant-btn {
+  @apply text-base font-semibold transition-all duration-200 border-none;
+  padding: 0.6rem 1.2rem;
+
+  &.g-btn-primary {
+    @apply text-white bg-primary border border-solid border-primary;
+
+    &:hover {
+      @apply text-link border-blackHighLight bg-blackHighLight;
+    }
+  }
+
+  &.g-btn-secondary {
+    @apply border border-solid border-lightStroke;
+
+    &:hover {
+      @apply text-link border-primary;
+    }
+  }
+
+  &.g-btn__small {
+    @apply text-sm leading-8 h-auto;
+    padding: 0.4rem 1.1rem !important;
+  }
+
+  &[nzType='link'] {
+    @apply text-sm leading-8 text-primary p-0 h-auto;
+    padding-top: 0 !important;
+
+    &:hover {
+      @apply hover:text-blueHighLight;
+    }
+  }
+}

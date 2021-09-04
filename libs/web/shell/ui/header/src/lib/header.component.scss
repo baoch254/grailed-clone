@@ -1,0 +1,16 @@
+:host {
+  @apply block w-screen h-headerGlobal fixed top-0 left-0 bg-white;
+  @apply border-b border-solid border-lightStroke z-20;
+}
+
+.header {
+  padding: 1.6rem 0;
+}
+
+.header-logo {
+  @apply w-headerLogo h-headerLogo;
+
+  & > svg-icon {
+    @apply w-full h-full;
+  }
+}

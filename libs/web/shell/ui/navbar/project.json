@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/web/shell/ui/navbar",
+  "sourceRoot": "libs/web/shell/ui/navbar/src",
+  "prefix": "grail",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/web/shell/ui/navbar"],
+      "options": {
+        "jestConfig": "libs/web/shell/ui/navbar/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/web/shell/ui/navbar/src/**/*.ts",
+          "libs/web/shell/ui/navbar/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["type:ui", "scope:web"]
+}
